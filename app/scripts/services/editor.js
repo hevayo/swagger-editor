@@ -34,7 +34,7 @@ SwaggerEditor.service('Editor', function Editor(Autocomplete, ASTManager,
     Autocomplete.init(e);
     // Set editor options
     editor.setOptions({
-      fontFamily: 'Source Code Pro',
+      fontFamily: 'Lucida Console',
       enableBasicAutocompletion: true,
       enableLiveAutocompletion: true,
       enableSnippets: true

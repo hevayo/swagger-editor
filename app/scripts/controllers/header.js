@@ -64,6 +64,14 @@ SwaggerEditor.controller('HeaderCtrl', function HeaderCtrl($scope, $modal,
     return !defaults.disableFileMenu;
   };
 
+  $scope.showExamples = function () {
+    return !defaults.disableExamples;
+  };
+
+  $scope.showImport = function () {
+    return !defaults.disableImport;
+  };      
+
   $scope.showHeaderBranding = function () {
     return defaults.headerBranding;
   };

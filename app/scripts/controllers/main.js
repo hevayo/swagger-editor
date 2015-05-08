@@ -28,22 +28,24 @@ SwaggerEditor.controller('MainCtrl', function MainCtrl($rootScope, $stateParams,
       var url;
 
       // If there is a url provided, override the storage with that URL
-      if ($stateParams.import) {
+      /*if ($stateParams.import) {
         url = $stateParams.import;
         $location.search('import', null);
 
       // If there is no saved YAML either, load the default example
-      } else if (!yaml) {
+      } else if (!yaml) {*/
         url = defaults.examplesFolder + defaults.exampleFiles[0];
-      }
+      //}
 
       if (url) {
-        FileLoader.loadFromUrl(url).then(function (yaml) {
+      FileLoader.loadFromUrl(url).then(function (yaml) {
+          var designer =  parent.APIDesigner();
+          var yaml = jsyaml.safeDump(designer.api_doc); 
           if (yaml) {
             Storage.save('yaml', yaml);
             $rootScope.editorValue = yaml;
           }
-        });
+      });
       }
     });
   }

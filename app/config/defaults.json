@@ -7,13 +7,15 @@
   },
   "analytics": {
     "google": {
-      "id": "UA-51231036-1"
+      "id": ""
     }
   },
   "disableCodeGen": false,
+  "disableExamples":true,
+  "disableImport":true,
   "examplesFolder": "/spec-files/",
   "editorOptions": {
-    "theme": "ace/theme/atom_dark"
+  
   },
   "exampleFiles": [
     "default.yaml",
@@ -33,8 +35,8 @@
   "useYamlBackend": false,
   "disableFileMenu": false,
   "headerBranding": false,
-  "enableTryIt": true,
+  "enableTryIt": false,
   "brandingCssClass": "",
   "schemaUrl": "/schema/swagger.json",
-  "importProxyUrl": "https://cors-it.herokuapp.com/?url="
+  "importProxyUrl": ""
 }

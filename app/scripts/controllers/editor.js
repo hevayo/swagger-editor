@@ -20,8 +20,9 @@ SwaggerEditor.controller('EditorCtrl', function EditorCtrl($scope, $rootScope,
 
   function onAceChange() {
     var value = $rootScope.editorValue;
-
+    var designer =  parent.APIDesigner();
     Storage.save('yaml', value);
+    designer.yaml = value;
     ASTManager.refresh($rootScope.editorValue);
     ExternalHooks.trigger('code-change', []);
   }
