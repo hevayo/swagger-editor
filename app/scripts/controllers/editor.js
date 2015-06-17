@@ -12,10 +12,10 @@ SwaggerEditor.controller('EditorCtrl', function EditorCtrl($scope, $rootScope,
   };
 
   Editor.ready(function () {
-    Storage.load('yaml').then(function (yaml) {
+    /*Storage.load('yaml').then(function (yaml) {
       $rootScope.editorValue = yaml;
       onAceChange(true);
-    });
+    });*/
   });
 
   function onAceChange() {

@@ -1,5 +1,5 @@
 <div class="main-header">
-  <a href="http://swagger.io" target="_blank" class="logo" ng-if="!showHeaderBranding()"></a>
+  <a href="#" target="_blank" class="logo" ng-if="!showHeaderBranding()"></a>
   <div ng-include="'templates/branding-left.html'" ng-if="showHeaderBranding()" class="branding-3rdparty"></div>
   <section class="menu-bar">
     <div class="file dropdown" ng-if="showFileMenu()">
@@ -8,16 +8,16 @@
         <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" ng-if="showFileMenu()" role="menu" aria-labelledby="fileMenu">
-        <li role="presentation">
+        <!--li role="presentation">
           <a ng-click="newProject()" role="menuitem" tabindex="-1" track-event="file new">New</a>
         </li>
         <li role="presentation">
           <a ng-click="newProject(true)" role="menuitem" tabindex="-1" track-event="file blank">Blank Project</a>
-        </li>
+        </li-->
         <li role="presentation">
           <a id="open-example" ng-click="openExamples()" role="menuitem" tabindex="-1" track-event="file open-example" ng-if="showExamples()">Open Example&hellip;</a>
         </li>
-        <li role="presentation" class="divider"></li>
+        <!-- li role="presentation" class="divider"></li-->
         <li role="presentation">
           <a ng-click="openPasteJSON()" role="menuitem" tabindex="-1" track-event="file paste-json">Paste JSON&hellip;</a>
         </li>
